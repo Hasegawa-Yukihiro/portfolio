@@ -155,13 +155,13 @@ header h1 img {
 }
 
 .main__works__contents__item {
-  width: 300px;
+  width: 33%;
   margin: 0 3%;
 }
 
 .main__works__contents__item img {
   width: 300px;
-  height: 300px;
+  height: 250px;
 }
 
 .main__contact {
@@ -190,10 +190,6 @@ footer a {
   header {
     max-width: 920px;
     margin: 0 auto;
-  }
-  .main__skills {
-    max-width: 920px;
-    margin: 0 5% 130px 5%;
   }
 }
 
@@ -294,6 +290,9 @@ footer a {
   .main__works__contents__item p {
     margin: 0 auto;
     width: 70%;
+  }
+  .main__works__contents__item img {
+    height: 300px;
   }
   .main__contact p {
     margin: 0 auto;

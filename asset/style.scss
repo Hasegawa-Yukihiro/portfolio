@@ -141,11 +141,11 @@ header {
     margin: 65px 0;
     @include flex-between();
     &__item {
-      width: 300px;
+      width: 33%;
       margin: 0 3%;
       img {
         width: 300px;
-        height: 300px;
+        height: 250px;
       }
     }
   }
@@ -176,11 +176,6 @@ footer {
   header{
       max-width: 920px;
       margin: 0 auto;
-  }
-
-  .main__skills {
-    max-width: 920px;
-    margin: 0 5% 130px 5%;
   }
 }
 
@@ -291,6 +286,9 @@ footer {
       margin: 0 0 50px 0;
       @include text-width70();
 
+      img {
+        height: 300px;
+      }
     }
   }
 
