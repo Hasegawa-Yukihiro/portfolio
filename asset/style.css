@@ -305,4 +305,10 @@ footer a {
     text-align: center;
   }
 }
+
+@media screen and (max-width: 350px) {
+  body {
+    min-width: 350px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
