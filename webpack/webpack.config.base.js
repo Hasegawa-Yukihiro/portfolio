@@ -1,5 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const { VueLoaderPlugin } = require("vue-loader");
 
 const config = {
   // メインとなるJavaScriptファイル（エントリーポイント）
@@ -11,21 +12,30 @@ const config = {
     // 出力ファイル名
     filename: "bundle.js",
   },
-  /** https://qiita.com/YoshinoriKanno/items/322ae6e53daa35059c15 */
-  devtool: "eval-source-map",
   module: {
     rules: [
       {
         // 拡張子 .ts の場合
         test: /\.ts$/,
         // TypeScript をコンパイルする
-        use: "ts-loader",
+        use: [
+          {
+            loader: "ts-loader",
+            options: {
+              appendTsSuffixTo: [/\.vue$/],
+            },
+          },
+        ],
+      },
+      {
+        test: /\.vue$/,
+        loader: "vue-loader",
       },
     ],
   },
   // import 文で .ts ファイルを解決するため
   resolve: {
-    extensions: [".ts", ".js"],
+    extensions: [".ts", ".js", "vue"],
     // Webpackで利用するときの設定
     alias: {
       vue: "vue/dist/vue.js",
@@ -33,12 +43,13 @@ const config = {
   },
   // ES5(IE11等)向けの指定（webpack 5以上で必要）
   target: ["web", "es5"],
-  // plugins: [
-  //   new HtmlWebpackPlugin({
-  //     template: "./public/index.html",
-  //     filename: "index.html",
-  //   }),
-  // ],
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: "./public/index.html",
+      filename: "index.html",
+    }),
+    new VueLoaderPlugin(),
+  ],
 };
 
 module.exports = config;

@@ -1,14 +1,4 @@
 import Vue from "vue";
-import MyComponent from "./sub";
+import App from "./App.vue";
 
-new Vue({
-  el: "#root",
-  template: `<div class="root">
-        <h1>Hello Vue.js!</h1>
-        <my-component message="My Counter for TypeScript"></my-component>
-      </div>`,
-
-  components: {
-    "my-component": MyComponent,
-  },
-});
+new Vue(App).$mount("#root");
