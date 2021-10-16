@@ -1,9 +1,15 @@
 <template>
-  <h1>This is an about page</h1>
+  <Header />
 </template>
 
 <script lang="ts">
 import Vue from "vue";
+import Header from "./components/Header/inde.vue";
 
-export default Vue.extend({});
+export default Vue.extend({
+  name: "App",
+  components: {
+    Header,
+  },
+});
 </script>
