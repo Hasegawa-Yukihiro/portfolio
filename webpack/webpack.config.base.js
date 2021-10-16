@@ -1,19 +1,18 @@
+const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
-module.exports = {
-  // モード値を production に設定すると最適化された状態で、
-  // development に設定するとソースマップ有効でJSファイルが出力される
-  mode: "development",
-
+const config = {
   // メインとなるJavaScriptファイル（エントリーポイント）
-  entry: "./src/index.ts",
+  entry: path.resolve(__dirname, "../src/index.ts"),
   // ファイルの出力設定
   output: {
     //  出力ファイルのディレクトリ名
-    path: `${__dirname}/dist`,
+    path: path.resolve(__dirname, "../dist"),
     // 出力ファイル名
-    filename: "index.js",
+    filename: "bundle.js",
   },
+  /** https://qiita.com/YoshinoriKanno/items/322ae6e53daa35059c15 */
+  devtool: "eval-source-map",
   module: {
     rules: [
       {
@@ -26,7 +25,7 @@ module.exports = {
   },
   // import 文で .ts ファイルを解決するため
   resolve: {
-    extensions: [".ts"],
+    extensions: [".ts", ".js"],
     // Webpackで利用するときの設定
     alias: {
       vue: "vue/dist/vue.js",
@@ -34,10 +33,12 @@ module.exports = {
   },
   // ES5(IE11等)向けの指定（webpack 5以上で必要）
   target: ["web", "es5"],
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: "./public/index.html",
-      filename: "index.html",
-    }),
-  ],
+  // plugins: [
+  //   new HtmlWebpackPlugin({
+  //     template: "./public/index.html",
+  //     filename: "index.html",
+  //   }),
+  // ],
 };
+
+module.exports = config;

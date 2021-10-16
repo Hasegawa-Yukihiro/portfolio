@@ -11,5 +11,7 @@
     "moduleResolution": "node",
     // デコレーターを有効に設定
     "experimentalDecorators": true
-  }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist/**/*"]
 }
