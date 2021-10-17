@@ -35,6 +35,13 @@ const config = {
         test: /\.css$/,
         use: ["vue-style-loader", "css-loader"],
       },
+      {
+        test: /\.png$/,
+        loader: "url-loader",
+        options: {
+          esModule: false,
+        },
+      },
     ],
   },
   // import 文で .ts ファイルを解決するため

@@ -1,14 +1,16 @@
 {
+  "license": "UNLICENSED",
   "scripts": {
     "start": "webpack serve --config ./webpack/webpack.config.dev",
     "build": "webpack --config ./webpack/webpack.config.prod.js",
-    "watch": "webpack -w"
+    "check:types": "tsc --noEmit --project tsconfig.json"
   },
   "devDependencies": {
     "css-loader": "^6.4.0",
     "html-webpack-plugin": "^5.4.0",
     "ts-loader": "^9.2.6",
     "typescript": "^4.4.4",
+    "url-loader": "^4.1.1",
     "vue-loader": "^15.9.8",
     "vue-style-loader": "^4.1.3",
     "vue-template-compiler": "^2.6.14",

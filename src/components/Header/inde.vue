@@ -1,7 +1,7 @@
 <template>
   <header>
-    <h1><img src="asset/img/logo_ad.png" alt="logo" /></h1>
-    <nav>
+    <h1><img :src="logo_img" alt="logo" /></h1>
+    <!-- <nav>
       <ul class="header__nav">
         <li><a class="header__nav__btn" href="#profile">Profile</a></li>
         <li><a class="header__nav__btn" href="#skills">Skills</a></li>
@@ -22,7 +22,7 @@
           ><i class="fab fa-2x fa-facebook-f" aria-hidden="true"></i
         ></a>
       </li>
-    </ul>
+    </ul> -->
   </header>
 </template>
 
@@ -31,5 +31,10 @@ import Vue from "vue";
 
 export default Vue.extend({
   name: "Header",
+  data() {
+    return {
+      logo_img: require("../../assets/images/logo_ad.png"),
+    };
+  },
 });
 </script>
