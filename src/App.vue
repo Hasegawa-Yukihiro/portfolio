@@ -45,4 +45,12 @@ h2 {
   font-size: 50px;
   font-family: "Lato", sans-serif;
 }
+
+h3 {
+  font-size: 35px;
+}
+
+h4 {
+  font-size: 25px;
+}
 </style>
