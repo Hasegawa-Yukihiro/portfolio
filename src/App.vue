@@ -20,6 +20,8 @@ export default Vue.extend({
 </script>
 
 <style>
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -32,5 +34,15 @@ body {
   font-family: Helvetica, "游ゴシック", "Yu Gothic", YuGothic, HiraKakuProN-W3,
     "メイリオ", Meiryo, sans-serif;
   line-height: 1.9;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h2 {
+  font-size: 50px;
+  font-family: "Lato", sans-serif;
 }
 </style>
