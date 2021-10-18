@@ -1,15 +1,20 @@
 <template>
-  <Header />
+  <div>
+    <Header />
+    <Main />
+  </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
-import Header from "./components/Header/inde.vue";
+import Header from "./components/Header/index.vue";
+import Main from "./components/Main/index.vue";
 
 export default Vue.extend({
   name: "App",
   components: {
     Header,
+    Main,
   },
 });
 </script>
