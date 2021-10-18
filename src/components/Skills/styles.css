@@ -1,0 +1,28 @@
+.mainSkills h2 {
+  text-align: center;
+}
+
+.mainSkillsContents {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 65px 0;
+}
+
+.mainSkillsContents h4 {
+  font-weight: normal;
+}
+
+.mainSkillsContentsItem {
+  width: 30%;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.ts-svg {
+  width: 100px;
+}
+
+.ts-svg rect {
+  fill: #333;
+}
