@@ -1,0 +1,46 @@
+header {
+  max-width: 920px;
+  margin: 50px auto;
+}
+
+h1 img {
+  height: 100px;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.headerSocial {
+  display: flex;
+}
+
+.headerSocial li {
+  margin-right: 20px;
+}
+
+.headerSocial li a {
+  color: #6c6c6c;
+}
+
+.headerNav {
+  display: flex;
+  justify-content: right;
+}
+.headerNav li {
+  margin-right: 50px;
+}
+
+.headerNav li a:hover {
+  text-decoration: underline;
+}
