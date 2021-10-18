@@ -36,7 +36,7 @@ const config = {
         use: ["vue-style-loader", "css-loader"],
       },
       {
-        test: /\.png$/,
+        test: /\.png|jpg$/,
         loader: "url-loader",
         options: {
           esModule: false,
