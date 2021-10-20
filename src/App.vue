@@ -48,9 +48,11 @@ h2 {
 
 h3 {
   font-size: 35px;
+  font-weight: normal;
 }
 
 h4 {
   font-size: 25px;
+  font-weight: normal;
 }
 </style>

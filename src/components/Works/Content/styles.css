@@ -1,0 +1,9 @@
+.content {
+  width: 35%;
+  margin: 50px;
+}
+
+.content a img {
+  width: 300px;
+  height: 270px;
+}
