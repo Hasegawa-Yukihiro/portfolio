@@ -2,6 +2,7 @@
   <div>
     <Header />
     <Main />
+    <Footer />
   </div>
 </template>
 
@@ -9,12 +10,14 @@
 import Vue from "vue";
 import Header from "./components/Header/index.vue";
 import Main from "./components/Main/index.vue";
+import Footer from "./components/Footer/index.vue";
 
 export default Vue.extend({
   name: "App",
   components: {
     Header,
     Main,
+    Footer,
   },
 });
 </script>
