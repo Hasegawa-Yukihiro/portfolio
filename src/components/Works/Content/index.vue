@@ -3,8 +3,8 @@
     <a :href="href" target="_">
       <img :src="img" />
     </a>
-    <h4>{{ title }}</h4>
-    <p>{{ explanation }}</p>
+    <h4 class="title">{{ title }}</h4>
+    <p class="explanation">{{ explanation }}</p>
   </div>
 </template>
 
