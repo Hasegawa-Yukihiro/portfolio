@@ -1,9 +1,9 @@
 <template>
-  <section class="mainProfile" id="profile">
-    <div class="mainProfileImg">
-      <img :src="profile_img" alt="profileImg" />
+  <section class="profile" id="profile">
+    <div class="profileImg">
+      <img :src="profileImg" alt="profileImg" />
     </div>
-    <div class="mainProfileText">
+    <div class="profileText">
       <h2>Hasegawa Yukihiro</h2>
       <p>
         1996年生まれ。神奈川県川崎市出身。産業能率大学経営学部卒業。 <br />
@@ -24,7 +24,7 @@ export default Vue.extend({
   name: "Profile",
   data() {
     return {
-      profile_img: require("../../assets/images/me.png"),
+      profileImg: require("../../assets/images/me.png"),
     };
   },
 });

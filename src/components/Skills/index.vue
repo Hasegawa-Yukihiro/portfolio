@@ -1,36 +1,36 @@
 <template>
-  <section class="mainSkills" id="skills">
+  <section class="skills" id="skills">
     <h2>Skills</h2>
-    <div class="mainSkillsContents">
-      <div class="mainSkillsContentsItem">
+    <div class="skillsContents">
+      <div class="skillsContentsItem">
         <font-awesome-icon :icon="['fab', 'html5']" size="8x" />
         <h4>HTML5</h4>
       </div>
-      <div class="mainSkillsContentsItem">
+      <div class="skillsContentsItem">
         <font-awesome-icon :icon="['fab', 'css3']" size="8x" />
         <h4>CSS3</h4>
       </div>
-      <div class="mainSkillsContentsItem">
+      <div class="skillsContentsItem">
         <font-awesome-icon :icon="['fab', 'js-square']" size="8x" />
         <h4>JS / jQuery</h4>
       </div>
-      <div class="mainSkillsContentsItem">
+      <div class="skillsContentsItem">
         <font-awesome-icon :icon="['fab', 'vuejs']" size="8x" />
         <h4>Vue</h4>
       </div>
-      <div class="mainSkillsContentsItem">
+      <div class="skillsContentsItem">
         <font-awesome-icon :icon="['fab', 'bootstrap']" size="8x" />
         <h4>BootStrap</h4>
       </div>
-      <div class="mainSkillsContentsItem">
+      <div class="skillsContentsItem">
         <font-awesome-icon :icon="['fab', 'sass']" size="8x" />
         <h4>Sass / Scss</h4>
       </div>
-      <div class="mainSkillsContentsItem">
+      <div class="skillsContentsItem">
         <font-awesome-icon :icon="['fab', 'react']" size="8x" />
         <h4>React</h4>
       </div>
-      <div class="mainSkillsContentsItem">
+      <div class="skillsContentsItem">
         <svg
           class="ts-svg"
           fill="none"

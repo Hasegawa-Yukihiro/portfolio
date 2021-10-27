@@ -1,15 +1,15 @@
-.mainSkills h2 {
+.skills h2 {
   text-align: center;
 }
 
-.mainSkillsContents {
+.skillsContents {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   margin: 65px 0;
 }
 
-.mainSkillsContentsItem {
+.skillsContentsItem {
   width: 30%;
   margin: 20px 0;
   text-align: center;
