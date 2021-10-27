@@ -3,10 +3,12 @@
   "scripts": {
     "start": "webpack serve --config ./webpack/webpack.config.dev",
     "build": "webpack --config ./webpack/webpack.config.prod.js",
-    "check:types": "tsc --noEmit --project tsconfig.json"
+    "check:types": "tsc --noEmit --project tsconfig.json",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "css-loader": "^6.4.0",
+    "gh-pages": "^3.2.3",
     "html-webpack-plugin": "^5.4.0",
     "ts-loader": "^9.2.6",
     "typescript": "^4.4.4",
