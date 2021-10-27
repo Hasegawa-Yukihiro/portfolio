@@ -18,16 +18,14 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue";
-
-export default Vue.extend({
+export default {
   name: "Profile",
   data() {
     return {
       profileImg: require("../../assets/images/me.png"),
     };
   },
-});
+};
 </script>
 
 <style scoped src="./styles.css" />

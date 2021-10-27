@@ -9,9 +9,7 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue";
-
-export default Vue.extend({
+export default {
   name: "Content",
   props: {
     img: {
@@ -31,7 +29,7 @@ export default Vue.extend({
       required: true,
     },
   },
-});
+};
 </script>
 
 <style scoped src="./styles.css" />

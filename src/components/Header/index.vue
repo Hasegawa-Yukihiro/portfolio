@@ -1,7 +1,7 @@
 <template>
   <header class="header">
     <div class="wrapper">
-      <h1><img :src="logo_img" alt="logo" /></h1>
+      <h1><img :src="logoImg" alt="logo" /></h1>
       <ul class="headerSocial">
         <li>
           <a href="https://twitter.com/hsgw_dot">
@@ -26,17 +26,6 @@
   </header>
 </template>
 
-<script lang="ts">
-import Vue from "vue";
-
-export default Vue.extend({
-  name: "Header",
-  data() {
-    return {
-      logo_img: require("../../assets/images/logo_ad.png"),
-    };
-  },
-});
-</script>
+<script src="./hooks.ts" />
 
 <style scoped src="./styles.css" />

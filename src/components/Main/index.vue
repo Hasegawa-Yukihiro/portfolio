@@ -13,13 +13,12 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue";
 import Profile from "../Profile/index.vue";
 import Skills from "../Skills/index.vue";
 import Works from "../Works/index.vue";
 import Contact from "../Contact/index.vue";
 
-export default Vue.extend({
+export default {
   name: "Main",
   components: {
     Profile,
@@ -32,7 +31,7 @@ export default Vue.extend({
       pcImg: require("../../assets/images/pc.jpg"),
     };
   },
-});
+};
 </script>
 
 <style scoped src="./styles.css" />
