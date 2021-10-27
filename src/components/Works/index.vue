@@ -37,10 +37,9 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue";
 import Content from "./Content/index.vue";
 
-export default Vue.extend({
+export default {
   name: "Works",
   components: {
     Content,
@@ -59,7 +58,7 @@ export default Vue.extend({
       ustrustExplanation: `株式会社 USTRUST様のLPを作成させていただきました。\n弊社デザイナーにて作成したUIデザインを基にHTML/CSSを用いて実装しております。`,
     };
   },
-});
+};
 </script>
 
 <style scoped src="./styles.css" />

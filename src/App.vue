@@ -7,19 +7,18 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue";
 import Header from "./components/Header/index.vue";
 import Main from "./components/Main/index.vue";
 import Footer from "./components/Footer/index.vue";
 
-export default Vue.extend({
+export default {
   name: "App",
   components: {
     Header,
     Main,
     Footer,
   },
-});
+};
 </script>
 
 <style>
