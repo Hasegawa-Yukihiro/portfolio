@@ -1,14 +1,14 @@
-.mainProfile {
+.profile {
   margin: 80px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.mainProfileImg {
+.profileImg {
   width: 350px;
 }
 
-.mainProfileText {
+.profileText {
   width: 50%;
 }

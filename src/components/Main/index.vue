@@ -1,12 +1,13 @@
 <template>
   <div>
     <div class="mainImg">
-      <img :src="pc_img" alt="pc" />
+      <img :src="pcImg" alt="pc" />
     </div>
     <div class="wrapper">
       <Profile />
       <Skills />
       <Works />
+      <Contact />
     </div>
   </div>
 </template>
@@ -16,6 +17,7 @@ import Vue from "vue";
 import Profile from "../Profile/index.vue";
 import Skills from "../Skills/index.vue";
 import Works from "../Works/index.vue";
+import Contact from "../Contact/index.vue";
 
 export default Vue.extend({
   name: "Main",
@@ -23,10 +25,11 @@ export default Vue.extend({
     Profile,
     Skills,
     Works,
+    Contact,
   },
   data() {
     return {
-      pc_img: require("../../assets/images/pc.jpg"),
+      pcImg: require("../../assets/images/pc.jpg"),
     };
   },
 });
