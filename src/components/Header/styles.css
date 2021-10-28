@@ -45,3 +45,7 @@ ul {
 .headerNav li a:hover {
   text-decoration: underline;
 }
+
+.headerNavLink {
+  cursor: pointer;
+}

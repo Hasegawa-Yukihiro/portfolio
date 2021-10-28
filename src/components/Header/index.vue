@@ -17,10 +17,35 @@
     </div>
     <nav>
       <ul class="headerNav">
-        <li><a class="headerNavLink" href="#profile">Profile</a></li>
-        <li><a class="headerNavLink" href="#skills">Skills</a></li>
-        <li><a class="headerNavLink" href="#works">Works</a></li>
-        <li><a class="headerNavLink" href="#contact">Contact</a></li>
+        <li>
+          <span
+            class="headerNavLink"
+            @click="handleScrollIntoContent('profile')"
+          >
+            Profile
+          </span>
+        </li>
+        <li>
+          <span
+            class="headerNavLink"
+            @click="handleScrollIntoContent('skills')"
+          >
+            Skills
+          </span>
+        </li>
+        <li>
+          <span class="headerNavLink" @click="handleScrollIntoContent('works')">
+            Works
+          </span>
+        </li>
+        <li>
+          <span
+            class="headerNavLink"
+            @click="handleScrollIntoContent('contact')"
+          >
+            Contact
+          </span>
+        </li>
       </ul>
     </nav>
   </header>
