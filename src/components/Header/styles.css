@@ -46,6 +46,9 @@ ul {
   text-decoration: underline;
 }
 
-.headerNavLink {
-  cursor: pointer;
+@media only screen and (max-width: 760px) {
+  h1 img {
+    height: auto;
+    width: 50%;
+  }
 }

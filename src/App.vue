@@ -57,4 +57,18 @@ h4 {
   font-size: 25px;
   font-weight: normal;
 }
+
+@media only screen and (max-width: 760px) {
+  h2 {
+    font-size: 40px;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+}
 </style>
