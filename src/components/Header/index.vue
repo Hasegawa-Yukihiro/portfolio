@@ -17,35 +17,22 @@
     </div>
     <nav>
       <ul class="headerNav">
-        <li>
-          <span
-            class="headerNavLink"
-            @click="handleScrollIntoContent('profile')"
-          >
-            Profile
-          </span>
-        </li>
-        <li>
-          <span
-            class="headerNavLink"
-            @click="handleScrollIntoContent('skills')"
-          >
-            Skills
-          </span>
-        </li>
-        <li>
-          <span class="headerNavLink" @click="handleScrollIntoContent('works')">
-            Works
-          </span>
-        </li>
-        <li>
-          <span
-            class="headerNavLink"
-            @click="handleScrollIntoContent('contact')"
-          >
-            Contact
-          </span>
-        </li>
+        <NavListItem
+          text="Profile"
+          @click.native="handleScrollIntoContent('profile')"
+        />
+        <NavListItem
+          text="Skills"
+          @click.native="handleScrollIntoContent('skills')"
+        />
+        <NavListItem
+          text="Works"
+          @click.native="handleScrollIntoContent('works')"
+        />
+        <NavListItem
+          text="Contact"
+          @click.native="handleScrollIntoContent('contact')"
+        />
       </ul>
     </nav>
   </header>
