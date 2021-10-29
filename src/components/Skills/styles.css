@@ -9,7 +9,7 @@
   margin: 65px 0;
 }
 
-.skillsContentsItem {
+.skillContentsItem {
   width: 30%;
   margin: 20px 0;
   text-align: center;
@@ -21,4 +21,10 @@
 
 .ts-svg rect {
   fill: #333;
+}
+
+@media only screen and (max-width: 760px) {
+  .skillContentsItem {
+    width: 50%;
+  }
 }

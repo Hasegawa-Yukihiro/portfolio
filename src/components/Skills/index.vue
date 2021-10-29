@@ -2,14 +2,49 @@
   <section class="skills" id="skills">
     <h2>Skills</h2>
     <div class="skillsContents">
-      <SkillContentsItem type="fab" icon="html5" title="HTML5" />
-      <SkillContentsItem type="fab" icon="css3" title="CSS3" />
-      <SkillContentsItem type="fab" icon="js-square" title="JS / jQuery" />
-      <SkillContentsItem type="fab" icon="vuejs" title="Vue" />
-      <SkillContentsItem type="fab" icon="bootstrap" title="BootStrap" />
-      <SkillContentsItem type="fab" icon="sass" title="Sass / Scss" />
-      <SkillContentsItem type="fab" icon="react" title="React" />
-      <div class="skillsContentsItem">
+      <SkillContentsItem
+        class="skillContentsItem"
+        type="fab"
+        icon="html5"
+        title="HTML5"
+      />
+      <SkillContentsItem
+        class="skillContentsItem"
+        type="fab"
+        icon="css3"
+        title="CSS3"
+      />
+      <SkillContentsItem
+        class="skillContentsItem"
+        type="fab"
+        icon="js-square"
+        title="JS / jQuery"
+      />
+      <SkillContentsItem
+        class="skillContentsItem"
+        type="fab"
+        icon="vuejs"
+        title="Vue"
+      />
+      <SkillContentsItem
+        class="skillContentsItem"
+        type="fab"
+        icon="bootstrap"
+        title="BootStrap"
+      />
+      <SkillContentsItem
+        class="skillContentsItem"
+        type="fab"
+        icon="sass"
+        title="Sass / Scss"
+      />
+      <SkillContentsItem
+        class="skillContentsItem"
+        type="fab"
+        icon="react"
+        title="React"
+      />
+      <div class="skillContentsItem">
         <svg
           class="ts-svg"
           fill="none"
