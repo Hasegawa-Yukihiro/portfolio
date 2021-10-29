@@ -19,18 +19,22 @@
       <ul class="headerNav">
         <NavListItem
           text="Profile"
+          class="navListItem"
           @click.native="handleScrollIntoContent('profile')"
         />
         <NavListItem
           text="Skills"
+          class="navListItem"
           @click.native="handleScrollIntoContent('skills')"
         />
         <NavListItem
           text="Works"
+          class="navListItem"
           @click.native="handleScrollIntoContent('works')"
         />
         <NavListItem
           text="Contact"
+          class="navListItem"
           @click.native="handleScrollIntoContent('contact')"
         />
       </ul>
@@ -38,6 +42,15 @@
   </header>
 </template>
 
-<script src="./hooks.ts" />
+<script lang="ts" src="./hooks.ts">
+import NavListItem from "./NavListItem/index.vue";
+
+export default {
+  name: "Header",
+  components: {
+    NavListItem,
+  }
+}
+</script>
 
 <style scoped src="./styles.css" />
