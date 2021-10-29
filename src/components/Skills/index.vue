@@ -2,35 +2,49 @@
   <section class="skills" id="skills">
     <h2>Skills</h2>
     <div class="skillsContents">
-      <div class="skillsContentsItem">
-        <font-awesome-icon :icon="['fab', 'html5']" size="8x" />
-        <h4>HTML5</h4>
-      </div>
-      <div class="skillsContentsItem">
-        <font-awesome-icon :icon="['fab', 'css3']" size="8x" />
-        <h4>CSS3</h4>
-      </div>
-      <div class="skillsContentsItem">
-        <font-awesome-icon :icon="['fab', 'js-square']" size="8x" />
-        <h4>JS / jQuery</h4>
-      </div>
-      <div class="skillsContentsItem">
-        <font-awesome-icon :icon="['fab', 'vuejs']" size="8x" />
-        <h4>Vue</h4>
-      </div>
-      <div class="skillsContentsItem">
-        <font-awesome-icon :icon="['fab', 'bootstrap']" size="8x" />
-        <h4>BootStrap</h4>
-      </div>
-      <div class="skillsContentsItem">
-        <font-awesome-icon :icon="['fab', 'sass']" size="8x" />
-        <h4>Sass / Scss</h4>
-      </div>
-      <div class="skillsContentsItem">
-        <font-awesome-icon :icon="['fab', 'react']" size="8x" />
-        <h4>React</h4>
-      </div>
-      <div class="skillsContentsItem">
+      <SkillContentsItem
+        class="skillContentsItem"
+        type="fab"
+        icon="html5"
+        title="HTML5"
+      />
+      <SkillContentsItem
+        class="skillContentsItem"
+        type="fab"
+        icon="css3"
+        title="CSS3"
+      />
+      <SkillContentsItem
+        class="skillContentsItem"
+        type="fab"
+        icon="js-square"
+        title="JS / jQuery"
+      />
+      <SkillContentsItem
+        class="skillContentsItem"
+        type="fab"
+        icon="vuejs"
+        title="Vue"
+      />
+      <SkillContentsItem
+        class="skillContentsItem"
+        type="fab"
+        icon="bootstrap"
+        title="BootStrap"
+      />
+      <SkillContentsItem
+        class="skillContentsItem"
+        type="fab"
+        icon="sass"
+        title="Sass / Scss"
+      />
+      <SkillContentsItem
+        class="skillContentsItem"
+        type="fab"
+        icon="react"
+        title="React"
+      />
+      <div class="skillContentsItem">
         <svg
           class="ts-svg"
           fill="none"
@@ -57,8 +71,11 @@
 </template>
 
 <script lang="ts">
+import SkillContentsItem from "./SkillContentsItem/index.vue";
+
 export default {
   name: "Skills",
+  components: { SkillContentsItem },
 };
 </script>
 
