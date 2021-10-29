@@ -12,3 +12,9 @@
   text-align: right;
   font-size: 10px;
 }
+
+@media only screen and (max-width: 760px) {
+  .copyright {
+    text-align: center;
+  }
+}

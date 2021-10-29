@@ -38,17 +38,32 @@ ul {
   display: flex;
   justify-content: right;
 }
-.headerNav li {
-  margin-right: 50px;
-}
 
-.headerNav li a:hover {
-  text-decoration: underline;
+.navListItem {
+  margin-right: 50px;
 }
 
 @media only screen and (max-width: 760px) {
   h1 img {
     height: auto;
     width: 50%;
+  }
+
+  .headerNav {
+    flex-wrap: wrap;
+    width: 100%;
+    border-top: 1px solid #d9d9d9;
+  }
+
+  .navListItem {
+    text-align: center;
+    margin: 0;
+    padding: 10px 0;
+    flex-basis: 50%;
+    border-bottom: 1px solid #d9d9d9;
+  }
+
+  .navListItem:nth-child(odd) {
+    border-right: 1px solid #d9d9d9;
   }
 }

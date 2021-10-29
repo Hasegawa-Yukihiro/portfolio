@@ -1,7 +1,6 @@
 import NavListItem from "./NavListItem/index.vue";
 
 export default {
-  name: "Header",
   components: {
     NavListItem,
   },
