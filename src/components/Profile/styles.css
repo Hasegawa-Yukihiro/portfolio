@@ -12,6 +12,7 @@
 
 .profileText {
   width: 50%;
+  padding: 0 10px;
 }
 
 @media only screen and (max-width: 760px) {

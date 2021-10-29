@@ -13,6 +13,10 @@
 }
 
 @media only screen and (max-width: 760px) {
+  .mainImg {
+    height: auto;
+  }
+
   .mainImg img {
     height: auto;
   }
