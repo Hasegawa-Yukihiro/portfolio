@@ -1,6 +1,10 @@
+.mainImg {
+  height: 85vh;
+}
+
 .mainImg img {
   width: 100%;
-  height: 85vh;
+  height: 100%;
 }
 
 .wrapper {
