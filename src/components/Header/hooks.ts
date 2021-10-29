@@ -12,12 +12,7 @@ export default {
   methods: {
     handleScrollIntoContent(menuItem: string) {
       const getElement = document.getElementById(menuItem);
-      const elementOffsetTop = getElement.offsetTop;
-      const buff = 30;
-      window.scrollTo({
-        top: elementOffsetTop - buff,
-        behavior: "smooth",
-      });
+      getElement.scrollIntoView({ behavior: "smooth" });
     },
   },
 };
