@@ -42,15 +42,24 @@
   </header>
 </template>
 
-<script lang="ts" src="./hooks.ts">
+<script lang="ts">
 import NavListItem from "./NavListItem/index.vue";
+import handleScrollIntoContent from "./Modules/handleScrollIntoContent";
 
 export default {
   name: "Header",
   components: {
     NavListItem,
-  }
-}
+  },
+  data() {
+    return {
+      logoImg: require("../../assets/images/logo_ad.png"),
+    };
+  },
+  methods: {
+    handleScrollIntoContent,
+  },
+};
 </script>
 
 <style scoped src="./styles.css" />
